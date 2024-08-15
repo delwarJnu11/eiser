@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+.blog-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.main-blogs {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.main-single-blog {
+  width: 100%;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  cursor: pointer;
+}
+.main-blog-img {
+  position: relative;
+  /* overflow: hidden; */
+}
+.main-blog-img img {
+  width: 100%;
+}
+.blog-date {
+  width: 80px;
+  height: 80px;
+  background-color: #71cd14;
+  color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  left: 40px;
+  bottom: -20px;
+}
+.blog-date h2 {
+  font-size: 30px;
+}
+.blog-date h4 {
+  font-size: 18px;
+}
+.main-blog-content {
+  margin-top: 30px;
+  padding: 20px 40px;
+}
+.main-blog-title {
+  font-size: 24px;
+  color: #181717;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+.main-blog-text {
+  font-size: 16px;
+  color: #797979;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+.main-blog-info {
+  font-size: 14px;
+  color: #797979;
+  font-weight: 400;
+  line-height: 28px;
+}
+.main-blog-info span {
+  padding: 0 20px;
+}
+.sidebar {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.search-box,
+.category,
+.posts,
+.tags,
+.feeds {
+  background-color: #f6f6f6;
+  padding: 30px;
+}
+.search-input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #79797938;
+  border-radius: 2px;
+}
+.search-btn {
+  border: 1px solid #71cd14;
+  width: 100%;
+  padding: 15px;
+  border-radius: 2px;
+  transition: all 0.5s ease-in;
+}
+.search-btn:hover {
+  background-color: transparent;
+  color: #71cd14;
+  border: 1px solid #71cd14;
+}
+
+/* Category styles */
+.main-blog-heading {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e7e2e2;
+}
+.lists {
+  margin: 0;
+  padding: 0;
+}
+.lists li {
+  list-style-type: none;
+  padding: 15px 0;
+  border-bottom: 1px solid #e7e2e2;
+  transition: all 1s ease-in-out;
+}
+.lists li:last-child {
+  border: none;
+}
+.lists li a {
+  text-decoration: none;
+  color: #797979;
+}
+.lists li a:hover {
+  color: #71cd14;
+}
+/* posts section styles */
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.post {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+.post-img {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+.post-img img {
+  width: 100%;
+  height: 100%;
+}
+.post-content h2 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 6px;
+  transition: all 0.3s linear;
+}
+.post-content p {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 0px;
+}
+.all-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.tag {
+  background-color: #f6f6f6;
+  color: #71cd14;
+  padding: 10px 20px;
+  border: 1px solid #71cd14;
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+}
+.tag:hover {
+  background-color: #71cd14;
+  color: #f6f6f6;
+}
+/* instagram feedds */
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.images img {
+  width: 100%;
+}
